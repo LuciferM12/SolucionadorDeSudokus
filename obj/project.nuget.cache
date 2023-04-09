@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4secHirMARdG4nGKqlUxJ3Kxlq6yLo3P7VMbu3b0Fcx4lg3gUsUptI6CeJyCk0yBwKy7Q4g2Y00dDbj24LFv+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dvlk8\\OneDrive\\Documents\\F#\\SolucionadorDeSudokus\\SolucionadorDeSudokus\\SolucionadorDeSudokus.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dvlk8\\.nuget\\packages\\fsharp.core\\7.0.200\\fsharp.core.7.0.200.nupkg.sha512"
+  ],
+  "logs": []
+}
