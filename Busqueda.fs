@@ -19,6 +19,7 @@ type estrategia<'s, 'a, 'd> = {
     remover     : 'd -> option<nodo<'s, 'a> * 'd>
 }
 module capitulo3 =
+    let mutable nodos = 0
     let nodoInicial estado = {
             estado = estado
             depth = 0
@@ -31,6 +32,7 @@ module capitulo3 =
         | [] -> []
         | h :: t -> f h :: map f t
     let expandir problema padre =
+        nodos <- nodos + 1
         problema.sucesores padre.estado
         |> List.map (fun (a,s) -> {
             depth = padre.depth + 1
