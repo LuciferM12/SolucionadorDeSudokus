@@ -35,7 +35,7 @@ let rec verTabla list =
         )
         printfn ""
     )
-//Funcion para la entrada de datos
+
 let rec leer (i : int) (j : int) (list : int list)=
     match j with
     | 81 -> List.chunkBySize 9 list
@@ -54,9 +54,8 @@ let rec newton_Raphson N K b =
     let bp = b - f / fp
     if abs(bp - b) < 0.00001 then bp else newton_Raphson N K bp
 
-//Ejecucion de las estrategias con la entrada proporcionada
 let t0 = System.DateTime.UtcNow
-//match capitulo3.busquedaArbol DFS.estrategia (Sudoku.problema (leer 0 0 [])) with
+
 match capitulo3.busquedaArbol DFS.estrategia (Sudoku.problema casoPrueba1) with
     | Some n -> 
         let sol = capitulo3.acciones n
